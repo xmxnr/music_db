@@ -13,3 +13,11 @@ Artist.belongsToMany(Album, { through: 'albumArtist' });
 // album -> songs
 Song.belongsToMany(Album, { through: 'songAlbum' });
 Album.belongsToMany(Song, { through: 'songAlbum' });
+
+// songs -> artists
+Song.belongsToMany(Artist, { through: 'songArtist' });
+Artist.belongsToMany(Song, { through: 'songArtist' });
+
+//songs -> genre
+Song.belongsToMany(Genre, { through: 'songGenre' });
+Genre.belongsToMany(Song, { through: 'songGenre' });

@@ -4,7 +4,7 @@ const {
 	getOne,
 	remove,
 	update,
-} = require('../controllers/album.controller');
+} = require('../controllers/album.controllers');
 const express = require('express');
 
 const routerAlbum = express.Router();

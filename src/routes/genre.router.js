@@ -4,7 +4,7 @@ const {
 	getOne,
 	remove,
 	update,
-} = require('../controllers/genre.controller');
+} = require('../controllers/genre.controllers');
 const express = require('express');
 
 const GenreRouter = express.Router();

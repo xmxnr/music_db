@@ -5,7 +5,7 @@ const {
 	remove,
 	update,
 	setGenres,
-} = require('../controllers/artist.controller');
+} = require('../controllers/artist.controllers');
 const express = require('express');
 
 const routerArtist = express.Router();
